@@ -84,3 +84,9 @@ a{
     cursor: pointer;
     transform: scale(1.15);
 }
+
+#card-container{
+    width: 700px;
+    height: 900px;
+}
+
