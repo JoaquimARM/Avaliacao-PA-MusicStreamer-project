@@ -86,7 +86,47 @@ a{
 }
 
 #card-container{
-    width: 700px;
-    height: 900px;
+    max-width: 1800px;
+    max-height: 720px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    .card{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(70, 70, 70);
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        .card-img{
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(107, 107, 107);
+            border-radius: 10px;
+            width: 280px;
+            height: 210px;
+        }
+        .card-text{
+            position: relative;
+            top: 10px;
+            left: -2px;
+            border-radius: 10px;
+            margin: 12px;
+            background-color: rgb(107, 107, 107);
+            height: 157px;
+            width: 280px;
+        }
+        .music-player{
+            position: relative;
+            bottom: 23px;
+            left: 25px;
+            width: 250px;
+            height: 15px;
+        }
+        
+    }
 }
 
