@@ -34,7 +34,7 @@
     <!--menu de busca-->
     <section class="buscar" id="buscar">
         <input type="text" placeholder="digite sua musica ou artista que deseja buscar" class="texto-buscar" id="texto-buscar">
-        <button type="button" class="botao-buscar" id="botao-buscar">
+        <button type="button" class="botao-buscar" id="botao-buscar" onclick="buscar()">
             <span class="material-symbols-outlined" id="icone-buscar">
                 search
             </span>
@@ -53,7 +53,6 @@
             </section>
             <section class="music-player" id="music-player">
                 <audio class="audioPlayer" id="audioPlayer" controls>
-                    <source src="../tracks/lose-yourself.mp3" type="audio/mpeg">
                 </audio>
             </section>
         </section>

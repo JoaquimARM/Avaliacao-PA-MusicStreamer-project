@@ -1,11 +1,24 @@
 {
+  "0": {
     "musica": {
-      "nome": "lose yourself",
-      "artista": "eminem",
+      "nome": "Lose yourself",
+      "artista": "Eminem",
       "album": {
         "imagem": "../img/lose-yourself.jpg",
-        "titulo": "1234 caaguei"
+        "titulo": "lose-yourself"
       },
       "mp3": "../tracks/lose-yourself.mp3"
     }
+  },
+  "1": {
+    "musica": {
+      "nome": "Till i collapse",
+      "artista": "Eminem",
+      "album": {
+        "imagem": "../img/till-icollapse.jpg",
+        "titulo": "the eminem show"
+      },
+      "mp3": "../tracks/till-icollapse.mp3"
+    }
   }
+}

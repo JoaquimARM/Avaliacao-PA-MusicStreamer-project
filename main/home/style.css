@@ -27,13 +27,13 @@ a{
     top: 30px;
     margin-left: 8px;
     margin-bottom: 8px;
-    color: azure;
-    .icone{
-        position: relative;
-        align-items: center;
-        display: inline-block;
-        vertical-align: middle;
-    }
+    color: azure;   
+}
+.icone{
+    position: relative;
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 .my-playlist{
     text-align: center;
@@ -43,12 +43,11 @@ a{
     top: 50px;
     margin-left: 8px;
     color: azure;
-    .icone{
-        display: inline-block;
-        vertical-align: middle;
-    }
 }
-
+.icone{
+    display: inline-block;
+    vertical-align: middle;
+}
 .buscar {
     display: flex;
     position: relative;
@@ -74,10 +73,10 @@ a{
     border-bottom-right-radius: 10px;
     background-color: rgb(24, 24, 24);
     color: azure;
-    #icone-buscar {
-        display: inline-block;
-        vertical-align: middle;
-    }
+}
+#icone-buscar {
+    display: inline-block;
+    vertical-align: middle;
 }
 .botao-buscar:hover{
     background-color: rgb(61, 61, 61);
@@ -95,64 +94,65 @@ a{
     align-items: center;
     margin-top: 10px;
     margin-left: 100px;
-    .card{
-        margin-left: 20px;
-        width: 300px;
-        height: 400px;
-        background-color: rgb(12, 12, 12);
-        border-radius: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        .card-img{
-            position: relative;
-            top: 10px;
-            left: 10px;
-            background-color: rgb(107, 107, 107);
-            border-radius: 10px;
-            width: 280px;
-            height: 210px;
-        }
-        .card-text{
-            position: relative;
-            top: 10px;
-            left: -2px;
-            border-radius: 10px;
-            margin: 12px;
-            background-color: rgb(58, 58, 58);
-            height: 150px;
-            width: 280px;
-            #musica-nome{
-                position: relative;
-                left: 10px;
-                top: 5px;
-                margin: 3px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 20px;
-                color: rgb(0, 202, 0);
-            }
-            #artista-nome{
-                position: relative;
-                left: 10px;
-                margin: 3px;
-                color: rgb(0, 177, 0);
-            }
-        }
-        .music-player{
-            position: relative;
-            bottom: 23px;
-            left: 25px;
-            width: 250px;
-            height: 15px;
-            .audioPlayer{
-                position: relative;
-                bottom: 5px;
-                width: 250px;
-                height: 20px;
-            }
-        }
+}
+.card{
+    margin-left: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
+    .card-img{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(107, 107, 107);
+        border-radius: 10px;
+        width: 280px;
+        height: 210px;
+        
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+    }
+    .card-text{
+        position: relative;
+        top: 10px;
+        left: -2px;
+        border-radius: 10px;
+        margin: 12px;
+        background-color: rgb(58, 58, 58);
+        height: 150px;
+        width: 280px;
+        
+    }
+    .music-player{
+        position: relative;
+        bottom: 23px;
+        left: 25px;
+        width: 250px;
+        height: 15px; 
+    }
+    .audioPlayer{
+        position: relative;
+        bottom: 5px;
+        width: 250px;
+        height: 20px;
 }
 
+h3{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+p{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
 
 
 
