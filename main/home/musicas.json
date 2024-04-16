@@ -1,0 +1,11 @@
+{
+    "musica": {
+      "nome": "lose yourself",
+      "artista": "eminem",
+      "album": {
+        "imagem": "../img/lose-yourself.jpg",
+        "titulo": "1234 caaguei"
+      },
+      "mp3": "../tracks/lose-yourself.mp3"
+    }
+  }
