@@ -3,6 +3,7 @@
     "musica": {
       "nome": "Lose yourself",
       "artista": "Eminem",
+      "favorito": false,
       "album": {
         "imagem": "../img/lose-yourself.jpg",
         "titulo": "lose-yourself"
@@ -14,11 +15,372 @@
     "musica": {
       "nome": "Till i collapse",
       "artista": "Eminem",
+      "favorito": false,
       "album": {
-        "imagem": "../img/till-icollapse.jpg",
+        "imagem": "../img/eminem-show.jpg",
         "titulo": "the eminem show"
       },
       "mp3": "../tracks/till-icollapse.mp3"
+    }
+  },
+  "2": {
+    "musica": {
+      "nome": "Without me",
+      "artista": "Eminem",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/eminem-show.jpg",
+        "titulo": "the eminem show"
+      },
+      "mp3": "../tracks/without-me.mp3"
+    }
+  },
+  "3": {
+    "musica": {
+      "nome": "Stan",
+      "artista": "Eminem",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/stan.jpg",
+        "titulo": "stan"
+      },
+      "mp3": "../tracks/stan.mp3"
+    }
+  },
+  "4": {
+    "musica": {
+      "nome": "Mockingbird",
+      "artista": "Eminem",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/encore.jpg",
+        "titulo": "encore"
+      },
+      "mp3": "../tracks/mockinbird.mp3"
+    }
+  },
+  "5": {
+    "musica": {
+      "nome": "All Eyez On Me",
+      "artista": "2Pac",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/all-eyes-on-me.jpg",
+        "titulo": "all eyes on me"
+      },
+      "mp3": "../tracks/all eyes on me.mp3"
+    }
+  },
+  "6": {
+    "musica": {
+      "nome": "Ambitiounz As a Ridah",
+      "artista": "2Pac",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/all-eyes-on-me.jpg",
+        "titulo": "all eyes on me"
+      },
+      "mp3": "../tracks/ambitizous as a ridah.mp3"
+    }
+  },
+  "7": {
+    "musica": {
+      "nome": "Hit 'Em Up ",
+      "artista": "2Pac",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/greatest-hits.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/hit 'em up.mp3"
+    }
+  },
+  "8": {
+    "musica": {
+      "nome": "You Know How We Do It",
+      "artista": "IceCube",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/you know how we do it.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/you know how we do it.mp3"
+    }
+  },
+  "9": {
+    "musica": {
+      "nome": "Today Was a Good Day",
+      "artista": "IceCube",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/today was a good day.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/today was a good day.mp3"
+    }
+  },
+  "10": {
+    "musica": {
+      "nome": "Baby One More Time",
+      "artista": "Britney Spears",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/baby one more time.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/baby one more time.mp3"
+    }
+  },
+  "11": {
+    "musica": {
+      "nome": "Oops! i Did It Again",
+      "artista": "Britney Spears",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/ops i did it again.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/ops i did it again.mp3"
+    }
+  },
+  "12": {
+    "musica": {
+      "nome": "Im a Slave 4 U",
+      "artista": "Britney Spears",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/im a slave 4 u.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/im a slave 4 u.mp3"
+    }
+  },
+  "13": {
+    "musica": {
+      "nome": "Just Dance",
+      "artista": "Lady Gaga",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/lady gaga.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/just dance.mp3"
+    }
+  },
+  "14": {
+    "musica": {
+      "nome": "Bad Romance",
+      "artista": "Lady Gaga",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/lady gaga.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/bad romance.mp3"
+    }
+  },
+  "15": {
+    "musica": {
+      "nome": "Poker Face",
+      "artista": "Lady Gaga",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/lady gaga.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/poker face.mp3"
+    }
+  },
+  "16": {
+    "musica": {
+      "nome": "Complicated",
+      "artista": "Avril Lavigne",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/avril lavingne.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/complicated.mp3"
+    }
+  },
+  "17": {
+    "musica": {
+      "nome": "Skater Boy",
+      "artista": "Avril Lavigne",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/avril lavingne.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/skater boy.mp3"
+    }
+  },
+  "18": {
+    "musica": {
+      "nome": "Girlfriend",
+      "artista": "Avril Lavigne",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/avril lavingne.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/girlfriend.mp3"
+    }
+  },
+  "19": {
+    "musica": {
+      "nome": "Highway To Hell",
+      "artista": "AC/DC",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/ac dc.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/highway to hell.mp3"
+    }
+  },
+  "20": {
+    "musica": {
+      "nome": "T.N.T",
+      "artista": "AC/DC",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/ac dc.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/tnt.mp3"
+    }
+  },
+  "21": {
+    "musica": {
+      "nome": "Thunderstruck",
+      "artista": "AC/DC",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/ac dc.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/thunderstruck.mp3"
+    }
+  },
+  "22": {
+    "musica": {
+      "nome": "radioactive",
+      "artista": "Imagine Dragons",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/imagine dragon.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/radioactive.mp3"
+    }
+  },
+  "23": {
+    "musica": {
+      "nome": "believer",
+      "artista": "Imagine Dragons",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/imagine dragon.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/believer.mp3"
+    }
+  },
+  "24": {
+    "musica": {
+      "nome": "thunder",
+      "artista": "Imagine Dragons",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/imagine dragon.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/thunder.mp3"
+    }
+  },
+  "25": {
+    "musica": {
+      "nome": "Balada",
+      "artista": "Gusttavo Lima",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/balada.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/balada.mp3"
+    }
+  },
+  "26": {
+    "musica": {
+      "nome": "Meteoro",
+      "artista": "Luan Santana",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/meteoro.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/meteoro.mp3"
+    }
+  },
+  "27": {
+    "musica": {
+      "nome": "Dentro da Hilux",
+      "artista": "Luan Pereira",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/hilux.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/hilux.mp3"
+    }
+  },
+  "28": {
+    "musica": {
+      "nome": "Cheia De Manias",
+      "artista": "Raça Negra",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/raca-negro.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/cheia de manias.mp3"
+    }
+  },
+  "29": {
+    "musica": {
+      "nome": "A Vida Inteira",
+      "artista": "Raça Negra",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/raca-negro.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/a vida inteira.mp3"
+    }
+  },
+  "30": {
+    "musica": {
+      "nome": "Tarde Demais",
+      "artista": "Raça Negra",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/raca-negro.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/tarde demais.mp3"
+    }
+  },
+  "31": {
+    "musica": {
+      "nome": "",
+      "artista": "",
+      "favorito": false,
+      "album": {
+        "imagem": "../img/.jpg",
+        "titulo": ""
+      },
+      "mp3": "../tracks/.mp3"
     }
   }
 }

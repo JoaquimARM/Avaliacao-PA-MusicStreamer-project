@@ -35,7 +35,7 @@ a{
     display: inline-block;
     vertical-align: middle;
 }
-.my-playlist{
+.playlist{
     text-align: center;
     position: relative;
     max-width: 150px;
@@ -86,17 +86,18 @@ a{
 
 
 #card-container{
-    max-width: 1800px;
-    max-height: 720px;
-    display: flex;
-    flex-direction: row;
+    max-width: 1600px;
+    max-height: 1020px;
+    display: grid;
+    grid-template-columns: auto auto auto; /* Define três colunas com largura automática */
+    grid-gap: 15px; /* Define o espaçamento entre as células */
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     margin-left: 100px;
 }
 .card{
-    margin-left: 20px;
+    margin-left: 10px;
     width: 300px;
     height: 400px;
     background-color: rgb(12, 12, 12);
@@ -154,5 +155,17 @@ p{
     left: 10px;
 }
 
+.favorite{
+    position: relative;
+    bottom: 140px;
+    left: 230px;
+    max-width: 40px;
+}
 
+.star{
+    cursor: pointer;   
+}
 
+.favorite .favorito {
+    color: gold;
+}
