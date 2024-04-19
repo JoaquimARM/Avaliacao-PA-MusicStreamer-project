@@ -370,17 +370,5 @@
       },
       "mp3": "../tracks/tarde demais.mp3"
     }
-  },
-  "31": {
-    "musica": {
-      "nome": "",
-      "artista": "",
-      "favorito": false,
-      "album": {
-        "imagem": "../img/.jpg",
-        "titulo": ""
-      },
-      "mp3": "../tracks/.mp3"
-    }
   }
 }

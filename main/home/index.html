@@ -26,14 +26,14 @@
                 </section>
                 HOME
             </section>
-            <section class="playlist" id="playlist">
+            <section class="favorite-tracks" id="favorite-tracks">
                 <section class="icone" id="icone">
                     <span class="material-symbols-outlined">library_music</span>
                 </section>
-                PLAYLIST
+                FAVORITES
             </section>
     </section>
-    <!--menu de busca-->
+    <!--funcao de busca-->
     <section class="buscar" id="buscar">
         <input type="text" placeholder="digite sua musica ou artista que deseja buscar" class="texto-buscar" id="texto-buscar">
         <button type="button" class="botao-buscar" id="botao-buscar" onclick="buscar()">
@@ -45,15 +45,18 @@
             <section class="resultado-busca" id="resultado-busca"></section>
         </section>
     </section>
+    <!--Cards-->
     <section class="card-container" id="card-container">
-        <section class="card" id="card">
+        <!--a estrutura dos cards abaixo esta comentada pois o card vazio estava aparecendo com as outras musicas-->
+
+        <!--<section class="card" id="card">
             <section class="card-img" id="card-img">
 
             </section>
             <section class="card-text" id="card-text">
 
             </section>
-            <section class="favorite" id="favorite">             
+            <section class="favorite" id="favorite">
                     <span class="material-symbols-outlined">
                         star
                     </span>
@@ -62,7 +65,41 @@
                 <audio class="audioPlayer" id="audioPlayer" controls>
                 </audio>
             </section>
-        </section>
+        </section>-->
+    </section>
+    <section class="available-tracks" id="available-tracks">
+        <h3 id="title">Artistas disponiveis:</h3>
+
+        <p>Rap</p>
+        <ul id="rap">
+            <li>Eminem</li>
+            <li>2Pac</li>
+            <li>IceCube</li>
+        </ul>
+
+        <p>Pop</p>
+        <ul id="pop">
+            <li>Lady Gaga</li>
+            <li>Britney Spears</li>
+            <li>Avril lavigne</li>
+        </ul>
+
+        <p>Rock</p>
+        <ul id="rock">
+            <li>Ac/Dc</li>
+            <li>Imagine Dragons</li>
+        </ul>
+
+        <p>Sertanejo</p>
+        <ul id="Sertanejo">
+            <li>Gusttavo lima</li>
+            <li>Luan Santana</li>
+            <li>Luan Pereira</li>
+        </ul>
+        <p>Pagode/Samba</p>
+        <ul id="Pagode/Samba">
+            <li>Raça Negra</li>
+        </ul>
     </section>
 
     <script src="script.js"></script>

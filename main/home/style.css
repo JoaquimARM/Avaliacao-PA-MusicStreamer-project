@@ -1,3 +1,4 @@
+/*CSS geral*/
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ a{
     color: azure;
 }
 
-
+/*CSS do menu*/
 .menu{
     display: block;
     width: 200px;
@@ -27,7 +28,8 @@ a{
     top: 30px;
     margin-left: 8px;
     margin-bottom: 8px;
-    color: azure;   
+    color: azure;
+    cursor: pointer;
 }
 .icone{
     position: relative;
@@ -35,25 +37,31 @@ a{
     display: inline-block;
     vertical-align: middle;
 }
-.playlist{
+.favorite-tracks{
     text-align: center;
     position: relative;
     max-width: 150px;
     max-height: 50px;
+    right: 10px;
     top: 50px;
     margin-left: 8px;
     color: azure;
+    cursor: pointer;
 }
 .icone{
     display: inline-block;
     vertical-align: middle;
 }
+
+/*CSS da busca*/
 .buscar {
     display: flex;
     position: relative;
     bottom: 150px;
+    left: 700px;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
 }
 .texto-buscar {
     width: 500px;
@@ -84,17 +92,17 @@ a{
     transform: scale(1.15);
 }
 
-
+/*CSS dos cards*/
 #card-container{
     max-width: 1600px;
     max-height: 1020px;
     display: grid;
     grid-template-columns: auto auto auto; /* Define três colunas com largura automática */
-    grid-gap: 15px; /* Define o espaçamento entre as células */
+    grid-gap: 15px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 220px;
 }
 .card{
     margin-left: 10px;
@@ -112,7 +120,6 @@ a{
         border-radius: 10px;
         width: 280px;
         height: 210px;
-        
     }
     img {
         width: 100%;
@@ -128,14 +135,29 @@ a{
         background-color: rgb(58, 58, 58);
         height: 150px;
         width: 280px;
-        
+    }
+    .card-favorite {
+        position: absolute;
+    }
+    .card-favorite .material-symbols-outlined {
+        position: relative;
+        left: 250px;
+        bottom: 140px;
+        cursor: pointer;
+    }
+    .card-favorite .material-symbols-outlined:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+    .card-favorite .material-symbols-outlined.favorito {
+        color: gold;
     }
     .music-player{
         position: relative;
         bottom: 23px;
         left: 25px;
         width: 250px;
-        height: 15px; 
+        height: 15px;
     }
     .audioPlayer{
         position: relative;
@@ -144,6 +166,7 @@ a{
         height: 20px;
 }
 
+/*CSS de texto*/
 h3{
     position: relative;
     top: 10px;
@@ -155,17 +178,27 @@ p{
     left: 10px;
 }
 
-.favorite{
-    position: relative;
-    bottom: 140px;
-    left: 230px;
-    max-width: 40px;
-}
 
-.star{
-    cursor: pointer;   
-}
 
-.favorite .favorito {
-    color: gold;
+/*CSS dos artistas disponiveis*/
+
+.available-tracks{
+    position: absolute;
+    bottom: 50px;
+    width: 230px;
+    height: 690px;
+    background-color: rgb(20, 20, 20);
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+#title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.available-tracks p{
+    margin-bottom: 20px;
+}
+li{
+    margin-bottom: 5px;
+    list-style-type: none;
 }
