@@ -20,6 +20,7 @@ a{
     border-bottom-right-radius: 10%;
     font-weight: 400;
 }
+/*opcao home do menu*/
 .home{
     text-align: center;
     position: relative;
@@ -31,12 +32,14 @@ a{
     color: azure;
     cursor: pointer;
 }
+/*posicionamento de icones*/
 .icone{
     position: relative;
     align-items: center;
     display: inline-block;
     vertical-align: middle;
 }
+/*opcao de favoritos no menu*/
 .favorite-tracks{
     text-align: center;
     position: relative;
@@ -136,6 +139,7 @@ a{
         height: 150px;
         width: 280px;
     }
+    /* posicionamento e estilizacao da estrela de favoritar*/
     .card-favorite {
         position: absolute;
     }
@@ -152,6 +156,10 @@ a{
     .card-favorite .material-symbols-outlined.favorito {
         color: gold;
     }
+    .card-favorite .material-symbols-outlined.favorito:active {
+        color: gold;
+    }
+    /* posiconamento e dimensao do player mp3*/
     .music-player{
         position: relative;
         bottom: 23px;

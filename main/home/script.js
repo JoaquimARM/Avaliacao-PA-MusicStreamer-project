@@ -7,18 +7,18 @@ function buscar() {
   // Limpa resultados anteriores
   cardContainer.innerHTML = '';
 
-  // Carrega o JSON
+  // Carrega o arquivo JSON
   fetch('musicas.json')
     .then(response => response.json())
     .then(data => {
-      // Percorre o JSON e verifica se o texto corresponde ao nome da música ou do artista
+      // vai ate o JSON e verifica se o texto corresponde ao nome da música ou do artista
       for (const key in data) {
         const musica = data[key].musica;
         if (
           musica.nome.toLowerCase().includes(texto) ||
           musica.artista.toLowerCase().includes(texto)
         ) {
-          // Cria um novo card
+          // Cria o card
           const card = document.createElement('section');
           card.className = 'card';
 
@@ -28,13 +28,13 @@ function buscar() {
           cardImg.innerHTML = `<img src="${musica.album.imagem}" alt="Capa do álbum">`;
           card.appendChild(cardImg);
 
-          // Adiciona o texto da música e do artista ao card
+          // Adiciona o nome da música e do artista ao card
           const cardText = document.createElement('section');
           cardText.className = 'card-text';
           cardText.innerHTML = `<h3 id="titulo">${musica.nome}</h3><p id="artista">${musica.artista}</p>`;
           card.appendChild(cardText);
 
-           // Adicionar a informação de favorito ao card
+           // Adiciona a opcao de favorito ao card
           const cardFavorite = document.createElement('section');
           cardFavorite.className = 'card-favorite';
           cardFavorite.innerHTML = `<span class="material-symbols-outlined ${musica.favorito ? 'favorito' : ''}">star</span>`;
@@ -64,23 +64,23 @@ function buscar() {
       console.error('Erro ao carregar o JSON:', error);
     });
 }
-                                                        // TELA INICIAL QUE MOSTRA CARDS ALEATORIOS PRO USUARIO VER
+                                                    // TELA INICIAL QUE MOSTRA CARDS ALEATORIOS PRO USUARIO VER
 
-// Função para carregar os dados das músicas do JSON e criar os cards
+// carrega os dados das músicas do JSON e cria os cards
 function loadMusicDataAndCreateRandomCards() {
-  // Carregar o arquivo JSON de músicas
+  // Carregar o arquivo JSON das músicas
   fetch('musicas.json')
-      .then(response => response.json()) // Transformar a resposta em JSON
+      .then(response => response.json())
       .then(data => {
-          // Extrair as músicas do JSON
+          // Extrair as músicas do arquivo JSON
           const musicas = Object.values(data).map(item => item.musica);
 
-          // Obter uma lista de índices aleatórios
+          // faz uma lista com índices aleatórios
           const randomIndexes = getRandomIndexes(musicas.length, 9);
-          // Filtrar as músicas para pegar apenas as nove correspondentes aos índices aleatórios
+          // Filtra as músicas para pegar apenas as nove correspondentes aos índices aleatórios
           const randomMusicas = randomIndexes.map(index => musicas[index]);
 
-          // Processar os dados e criar os cards
+          // cria os cards com musicas aleatorias
           createMusicCards(randomMusicas);
       })
       .catch(error => {
@@ -88,30 +88,29 @@ function loadMusicDataAndCreateRandomCards() {
       });
 }
 
-// Função para criar os cards de músicas na página
+// Função para adicionar aleatorios de música na página (funcao de criar cards e a mesma da de cima)
 function createMusicCards(data) {
   // Selecionar o contêiner onde os cards serão adicionados
   var cardContainer = document.getElementById("card-container");
 
-  // Iterar sobre os dados das músicas e criar um card para cada uma
   data.forEach(musica => {
-      // Criar o card
+      // Cria o card
       const card = document.createElement('section');
       card.className = 'card';
 
-      // Adicionar a imagem do álbum ao card
+      // Adiciona a imagem do álbum ao card
       const cardImg = document.createElement('section');
       cardImg.className = 'card-img';
       cardImg.innerHTML = `<img src="${musica.album.imagem}" alt="Capa do álbum">`;
       card.appendChild(cardImg);
 
-      // Adicionar o texto da música e do artista ao card
+      // Adiciona o nome da música e do artista ao card
       const cardText = document.createElement('section');
       cardText.className = 'card-text';
       cardText.innerHTML = `<h3>${musica.nome}</h3><p>${musica.artista}</p>`;
       card.appendChild(cardText);
 
-      // Adicionar a informação de favorito ao card
+      // Adiciona a informação de favorito ao card
       const cardFavorite = document.createElement('section');
       cardFavorite.className = 'card-favorite';
       cardFavorite.innerHTML = `<span class="material-symbols-outlined ${musica.favorito ? 'favorito' : ''}">star</span>`;
@@ -119,7 +118,7 @@ function createMusicCards(data) {
       cardFavorite.addEventListener('click', () => toggleFavorite(musica));
       card.appendChild(cardFavorite);
 
-      // Adicionar o player de música ao card
+      // Adiciona o player de música ao card
       const musicPlayer = document.createElement('section');
       musicPlayer.className = 'music-player';
       const audioPlayer = document.createElement('audio');
@@ -132,7 +131,7 @@ function createMusicCards(data) {
       musicPlayer.appendChild(audioPlayer);
       card.appendChild(musicPlayer);
 
-      // Adicionar o card ao contêiner
+      // Adiciona o card ao contêiner
       cardContainer.appendChild(card);
   });
 }
@@ -148,6 +147,7 @@ function getRandomIndexes(maxIndex, count) {
   }
   return indexes;
 }
+                                      //FUNCAO DE FAVORITAR MUSICAS E SALVAR NO LOCAL STORAGE
 
 // Função para alternar entre marcar e desmarcar como favorito
 function toggleFavorite(musica) {
@@ -188,18 +188,18 @@ function showFavoriteTracks() {
       const cardContainer = document.getElementById("card-container");
       cardContainer.innerHTML = '';
 
-      // Criar e exibir os cards das músicas favoritas
+      // Cria e exibe os cards das músicas favoritas
       createMusicCards(favoriteTracks);
   } else {
       console.error('Local Storage não suportado!');
   }
 }
 
-// Adicionar evento de clique ao ícone "FAVORITES" do menu
+// Adiciona evento de clique ao ícone "FAVORITES" do menu
 const favoritesIcon = document.getElementById('favorite-tracks');
 favoritesIcon.addEventListener('click', showFavoriteTracks);
 
-// adicionar evento de clique ao ícone "HOME" do menu
+// adiciona evento de clique ao ícone "HOME" do menu
 const homeIcon = document.getElementById('home');
 homeIcon.addEventListener('click', loadMusicDataAndCreateRandomCards);
 

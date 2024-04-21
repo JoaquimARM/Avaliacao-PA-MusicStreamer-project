@@ -33,7 +33,7 @@
                 FAVORITES
             </section>
     </section>
-    <!--funcao de busca-->
+    <!--funcao de buscar artistas-->
     <section class="buscar" id="buscar">
         <input type="text" placeholder="digite sua musica ou artista que deseja buscar" class="texto-buscar" id="texto-buscar">
         <button type="button" class="botao-buscar" id="botao-buscar" onclick="buscar()">
@@ -46,27 +46,9 @@
         </section>
     </section>
     <!--Cards-->
-    <section class="card-container" id="card-container">
-        <!--a estrutura dos cards abaixo esta comentada pois o card vazio estava aparecendo com as outras musicas-->
-
-        <!--<section class="card" id="card">
-            <section class="card-img" id="card-img">
-
-            </section>
-            <section class="card-text" id="card-text">
-
-            </section>
-            <section class="favorite" id="favorite">
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-            </section>
-            <section class="music-player" id="music-player">
-                <audio class="audioPlayer" id="audioPlayer" controls>
-                </audio>
-            </section>
-        </section>-->
-    </section>
+    <!--a estrutura do cards foi feita no js-->
+    <section class="card-container" id="card-container"></section>
+    <!--artista disponiveis-->
     <section class="available-tracks" id="available-tracks">
         <h3 id="title">Artistas disponiveis:</h3>
 
@@ -101,7 +83,6 @@
             <li>Raça Negra</li>
         </ul>
     </section>
-
     <script src="script.js"></script>
 </body>
 </html>
